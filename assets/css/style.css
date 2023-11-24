@@ -14,25 +14,11 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  background-image: url("../../images/public/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
   min-height: auto;
  }
-
-/* bg-image for landing area */
-.bg-img{
-  position: absolute;
-  top:0;
-  left:0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-.bg-img img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 
 /* navbar styling */
 .navbar-toggler,
@@ -81,8 +67,7 @@ body {
 
 /* slider styling */
 .slider-section {
-  height: auto;
-  padding: 100px 0 150px 0;
+  min-height: calc(100vh - 74px);
 }
 
 .slider-section .carousel-item h1 {
