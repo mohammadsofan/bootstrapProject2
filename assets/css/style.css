@@ -121,7 +121,7 @@ body {
   overflow: hidden;
   border: 6px solid #ffbe33;
 }
-.offers .row .card-offer .card-img:hover img {
+.offers .row .card-offer:hover img {
   transform: scale(1.2);
 }
 .offers .row .card-offer .card-img img {
