@@ -1,13 +1,18 @@
 body {
   font-family: "Dancing Script", cursive;
-  height: 5000px;
+
 }
 
 /* common classes */
-.order-btn {
+.custom-btn {
   font-family: "Open Sans", sans-serif;
   border-radius: 30px;
 }
+
+.font-normal {
+  font-family: "Open Sans", sans-serif;
+}
+
 
 /* landing-area styling */
 
@@ -113,6 +118,7 @@ body {
     min-height: 100vh;
   }
 }
+
 /* offers section styling */
 
 .offers .row .card-offer .card-img {
@@ -121,9 +127,11 @@ body {
   overflow: hidden;
   border: 6px solid #ffbe33;
 }
+
 .offers .row .card-offer:hover img {
   transform: scale(1.2);
 }
+
 .offers .row .card-offer .card-img img {
   border-radius: 50%;
   transition: 0.5s transform;
@@ -131,27 +139,30 @@ body {
 
 /* menu sction styling */
 
-.menu .nav .nav-item{
+.menu .nav .nav-item {
   font-family: "Open Sans", sans-serif;
 }
-.menu .nav .nav-item.active{
+
+.menu .nav .nav-item.active {
   border-radius: 50px;
 }
 
-.menu .foods .row{
+.menu .foods .row {
   row-gap: 1.5rem;
 }
 
-.menu .foods .row .food{
+.menu .foods .row .food {
   overflow: hidden;
   border-radius: 12px;
   font-family: "Open Sans", sans-serif;
 
 }
-.menu .foods .row .food:hover img{
+
+.menu .foods .row .food:hover img {
   transform: scale(1.2);
 }
-.menu .foods .row .food .food-img{
+
+.menu .foods .row .food .food-img {
   background-color: #eee;
   border-bottom-left-radius: 50px;
   height: 230px;
@@ -160,13 +171,80 @@ body {
   align-items: center;
 
 }
-.menu .foods .row .food .food-img img{
+
+.menu .foods .row .food .food-img img {
   width: 150px;
   transition: 0.3s all;
 }
-.menu .foods .row .food .price-buy .icon{
+
+.menu .foods .row .food .price-buy .icon {
   background-color: #ffbe33;
   padding: 10px;
   box-sizing: content-box;
   border-radius: 50%;
+}
+
+/* about section styling */
+/* ------ everything done by using bootstrap in about section ------ */
+
+
+/* book section styling */
+.book .form-control:focus,
+.book .form-select:focus {
+  border-color: #ffbe33;
+  outline: none;
+  box-shadow: none;
+}
+
+.book iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+/* testimonials section styling */
+
+.testimonials .card-img {
+  position: relative;
+}
+
+.testimonials .card-img::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 49px;
+  width: 0;
+  height: 0;
+  border: 12px solid transparent;
+  border-bottom: 12px solid #ffbe33;
+}
+
+.testimonials img {
+  width: 120px;
+  border: 5px solid #ffbe33;
+}
+
+.testimonials .controle-buttons button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.testimonials .controle-buttons button {
+  width: 50px;
+  height: 50px;
+  background: #ffbe33;
+  border-radius: 50%;
+}
+
+
+footer .social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  box-sizing: content-box;
+  border-radius: 50%;
+  background-color: #fff;
 }
