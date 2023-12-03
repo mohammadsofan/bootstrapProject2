@@ -13,7 +13,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-
 /* landing-area styling */
 
 .landing-area {
@@ -128,6 +127,12 @@ body {
   border: 6px solid #ffbe33;
 }
 
+@media (max-width:400px) {
+  .offers .row .card-offer .card-img {
+    width: 120px;
+  }
+}
+
 .offers .row .card-offer:hover img {
   transform: scale(1.2);
 }
@@ -237,6 +242,7 @@ body {
   border-radius: 50%;
 }
 
+/* footer styling */
 
 footer .social a {
   display: inline-flex;
